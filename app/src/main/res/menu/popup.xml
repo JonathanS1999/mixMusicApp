@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:comtext=".MainActivity"
+    >
+
+    <item
+        android:id ="@+id/item1"
+        android:title="Eliminar"
+        />
+
+    <item
+        android:id ="@+id/item2"
+        android:title="Compartir"
+        />
+
+    <item
+        android:id ="@+id/item3"
+        android:title="Añadir a lista"
+        />
+
+
+    <item
+        android:id ="@+id/item4"
+        android:title="Agregar a cola"
+        />
+
+
+    <item
+        android:id="@+id/item5"
+        android:title="Añadir a favoritos"
+        />
+
+    <item
+        android:id ="@+id/item6"
+        android:title="Establecer tono de llamada"
+        />
+
+
+    <item
+        android:id ="@+id/item7"
+        android:title="Buscar en YouTuve"
+        />
+
+    <item
+        android:id ="@+id/item8"
+        android:title="Editar etiquetas"
+        />
+
+    <item
+        android:id ="@+id/item9"
+        android:title="Mover a"
+        />
+
+
+    <item
+        android:id ="@+id/item10"
+        android:title="Recortar audio"
+        />
+
+    <item
+        android:id ="@+id/item11"
+        android:title="Detalles"
+        />
+
+    <item
+        android:id="@+id/item12"
+        android:title="Mas herramientas"
+        />
+
+
+
+</menu>

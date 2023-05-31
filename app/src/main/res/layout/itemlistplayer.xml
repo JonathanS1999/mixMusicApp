@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:id="@+id/item_player_list"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/selector_item_background"
+    android:layout_marginTop="5dp">
+
+
+
+
+    <ImageView
+        android:id="@+id/music_img_player"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="3dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_marginLeft="4dp"
+        android:id="@+id/numcancion_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:background="@drawable/textviewbackgroundcard"
+        android:textStyle="bold"
+        android:layout_marginStart="4dp" />
+
+    <LinearLayout
+        android:id="@+id/linear_player_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/music_img_player"
+        android:layout_toLeftOf="@id/deleteQueQue"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/music_img_player"
+        android:layout_toStartOf="@id/deleteQueQue">
+
+        <TextView
+            android:id="@+id/music_file_name_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" songs music natural melodi , and live music "
+            android:layout_marginLeft="7dp"
+            android:maxLines="1"
+            android:layout_marginStart="7dp" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:id="@+id/texartista_player"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text=" artista arcangel "
+            android:maxLines="1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="7dp"
+            android:layout_toLeftOf="@id/duracion_player"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/duracion_player" />
+
+        <TextView
+            android:id="@+id/duracion_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="3:45"
+            android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
+
+    </LinearLayout>
+
+
+<ImageView
+    android:layout_width="25dp"
+    android:layout_height="30dp"
+    android:id="@+id/deleteQueQue"
+    android:src="@drawable/ic_clear"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginStart="4dp"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp" />
+
+
+
+</RelativeLayout>

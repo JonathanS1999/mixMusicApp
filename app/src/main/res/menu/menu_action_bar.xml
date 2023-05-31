@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id ="@+id/search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Buscar"
+        app:showAsAction="always"
+        />
+
+
+        <group>
+            <item
+                android:id ="@+id/gpsort"
+                android:icon="@drawable/ic_sort"
+                android:title="ordenar por"
+                app:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/sortNameAZ"
+                android:title="nombre A-Z" />
+
+            <item android:id="@+id/sortNameZA"
+                android:title="nombre Z-A" />
+
+            <item android:id="@+id/sortDate"
+                android:title="fecha de creación" />
+
+            <item android:id="@+id/sortDateU"
+                android:title="fecha de modificación" />
+
+            <item android:id="@+id/sortSizeAs"
+                android:title="tamaño Ascendente" />
+
+            <item android:id="@+id/sortSizeDes"
+                android:title="tamaño descendente" />
+        </menu>
+            </item>
+        </group>
+
+    <item
+        android:id ="@+id/settings"
+        android:title="compartir"
+        />
+
+    <item
+        android:id ="@+id/themesApp"
+        android:title="temas"
+        />
+
+
+</menu>

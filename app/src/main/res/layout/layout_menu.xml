@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_background"
+    android:layout_marginBottom="20dp"
+    >
+
+
+<androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <TextView
+        android:id="@+id/item_menu_player_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:textSize="20sp"
+        android:text="Compartir "
+        android:layout_margin="4sp"
+        android:textColor="#1E1A1A"
+        app:drawableTint="#B78CE3"
+        android:drawablePadding="9dp"
+        android:background="@drawable/jx"
+        app:drawableStartCompat="@drawable/menu_share"
+        app:drawableLeftCompat="@drawable/menu_share"
+       />
+
+
+
+
+
+    <TextView
+        android:id="@+id/item_menu_player_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:textSize="20sp"
+        android:text="Eliminar "
+        android:layout_margin="5sp"
+        android:textColor="#1E1A1A"
+        app:drawableTint="#B78CE3"
+        android:drawablePadding="9dp"
+        android:background="@drawable/jx"
+        app:drawableStartCompat="@drawable/menu_delete"
+        app:drawableLeftCompat="@drawable/menu_delete" />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/item_menu_player_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:textSize="20sp"
+        android:text="Temporizador"
+        android:layout_margin="5sp"
+        android:textColor="#1E1A1A"
+        app:drawableTint="#B78CE3"
+        android:drawablePadding="9dp"
+        android:background="@drawable/jx"
+        app:drawableStartCompat="@drawable/menu_alarma"
+        app:drawableLeftCompat="@drawable/menu_alarma" />
+
+
+
+    <TextView
+        android:id="@+id/item_menu_player_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:textSize="20sp"
+        android:text="Agregar a lista "
+        android:layout_margin="5sp"
+        android:textColor="#1E1A1A"
+        app:drawableTint="#B78CE3"
+        android:drawablePadding="9dp"
+        android:background="@drawable/jx"
+        app:drawableStartCompat="@drawable/more_list"
+        app:drawableLeftCompat="@drawable/more_list" />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/item_menu_player_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:textSize="20sp"
+        android:text="Buscar en Youtube "
+        android:layout_margin="5sp"
+        android:textColor="#1E1A1A"
+        app:drawableTint="#B78CE3"
+        android:drawablePadding="9dp"
+        android:background="@drawable/jx"
+        app:drawableStartCompat="@drawable/ic_search_black_24dp"
+        app:drawableLeftCompat="@drawable/ic_search_black_24dp" />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/item_menu_player_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:textSize="20sp"
+        android:text="velocidad y tono "
+        android:layout_margin="4sp"
+        android:textColor="#1E1A1A"
+        app:drawableTint="#B78CE3"
+        android:drawablePadding="9dp"
+        android:background="@drawable/jx"
+        app:drawableStartCompat="@drawable/ic_speed"
+        app:drawableLeftCompat="@drawable/ic_speed" />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/item_menu_player_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:textSize="20sp"
+        android:text="Configurar como tono"
+        android:layout_margin="4sp"
+        android:textColor="#1E1A1A"
+        app:drawableTint="#B78CE3"
+        android:drawablePadding="9dp"
+        android:background="@drawable/jx"
+        app:drawableStartCompat="@drawable/ic_vibration_music"
+        app:drawableLeftCompat="@drawable/ic_vibration_music" />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/item_menu_player_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:textSize="20sp"
+        android:text="Detalles"
+        android:layout_margin="4sp"
+        android:textColor="#1E1A1A"
+        app:drawableTint="#B78CE3"
+        android:drawablePadding="9dp"
+        android:background="@drawable/jx"
+        app:drawableStartCompat="@drawable/ic_inf"
+        app:drawableLeftCompat="@drawable/ic_inf" />
+
+        </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

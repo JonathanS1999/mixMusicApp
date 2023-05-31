@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".AlbumDetails">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/backgroundAlbumDetails"
+            android:scaleType="centerCrop"
+            />
+
+    </RelativeLayout>
+
+ <com.google.android.material.appbar.AppBarLayout
+     android:layout_width="match_parent"
+     android:layout_height="200dp"
+     android:id="@+id/appbar"
+     android:background="@android:color/transparent"
+     >
+
+     <com.google.android.material.appbar.CollapsingToolbarLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/collapsingToolbar"
+         android:fitsSystemWindows="true"
+         app:layout_scrollFlags="scroll|exitUntilCollapsed"
+         >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/relativeLayout"
+    >
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/albumMoto"
+        android:src="@drawable/background_items_list"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_toRightOf="@id/albumMoto"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/albumMoto"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleSong"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="My list music player"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cantSong"
+        android:text="100 canciones"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@id/titleSong"/>
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/addAllFavorite"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_favorite"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/sharedAll"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/menu_share"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/addAllFavorite"
+            android:layout_toEndOf="@id/addAllFavorite" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/playAll"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_play"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/sharedAll"
+            android:layout_toEndOf="@id/sharedAll" />
+
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/menuMore_"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_baseline_more"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/playAll"
+            android:layout_toEndOf="@id/playAll" />
+
+    </RelativeLayout>
+</RelativeLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:id="@+id/toolbar_album_details" />
+
+     </com.google.android.material.appbar.CollapsingToolbarLayout>
+ </com.google.android.material.appbar.AppBarLayout>
+
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/reciclerViewAlbum"/>
+
+</androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

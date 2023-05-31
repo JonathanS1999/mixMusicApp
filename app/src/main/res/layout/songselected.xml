@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageViewsongs"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_alignParentLeft="true"
+            />
+
+
+
+        <TextView
+            android:layout_marginLeft="4dp"
+            android:id="@+id/numcancions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textStyle="bold"
+            />
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linears"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/imageViewsongs"
+            android:layout_toLeftOf="@id/chexs"
+            android:orientation="vertical"
+            >
+
+
+
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:id="@+id/namecancion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music song natural , universal songs"
+                android:maxLines="1"
+                />
+
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:id="@+id/artist"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:layout_height="wrap_content"
+                android:text=" artista arcangel "
+                android:textColor="#F50057"
+                android:maxLines="1"
+                />
+
+
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:id="@+id/duracions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3:56"
+                android:textSize="10dp"
+                android:maxLines="1"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <CheckBox
+            android:id="@+id/chexs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            />
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

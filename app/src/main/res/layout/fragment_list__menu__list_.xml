@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".List_Menu_List_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contenedorListas"
+            >
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:id="@+id/rl_recientes"
+                android:background="@drawable/activity_main_background"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/iconp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Recientes"
+                    android:textSize="25sp"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:id="@+id/rl_favoritos"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/activity_main_background"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/iconp"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="favoritos"
+                    android:textSize="25dp"
+                    />
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:id="@+id/rl_descargado"
+                android:layout_below="@id/rl_recientes"
+                android:background="@drawable/activity_main_background"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/iconp"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Descargas"
+                    android:textSize="25dp"
+                    />
+            </RelativeLayout>
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:id="@+id/rl_ultimosRep"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rl_favoritos"
+                android:background="@drawable/activity_main_background"
+                android:layout_alignParentEnd="true">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/iconp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Mas Reproducidos"
+                    android:textSize="25sp"
+                    />
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Listas de reproduccion"
+            android:id="@+id/my_lists"
+            android:layout_below="@id/contenedorListas"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView_ListRep"
+            android:layout_below="@id/my_lists"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

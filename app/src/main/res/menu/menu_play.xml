@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id ="@+id/item1"
+        android:title="@string/eliminar"
+        android:icon="@drawable/menu_delete"
+        />
+    <item
+        android:id ="@+id/item2"
+        android:title="@string/compartir"
+        android:icon="@drawable/menu_share"
+        />
+
+    <item
+       android:id ="@+id/item3"
+        android:title="@string/mover_a"
+        android:icon="@drawable/menu_moveto"
+        />
+
+
+    <item
+        android:id ="@+id/item4"
+        android:title="@string/velocidad_de_reproduccion"
+        android:icon="@drawable/ic_speed"
+        />
+</menu>

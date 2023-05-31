@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".PlayerActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/backgroundActivityPlayer"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/playercard"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/player_gradient"
+            android:layout_marginBottom="8sp"
+            android:scaleType="centerCrop"/>
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbal_player" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/containerRight"
+        android:id="@+id/card"
+        android:layout_below="@id/toolbal_player"
+        android:layout_toStartOf="@id/containerRight">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:id="@+id/linearPuntos"
+            >
+        </LinearLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linearPuntos"
+            android:id="@+id/viewpager_player"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="340dp"
+        android:layout_height="match_parent"
+        android:id="@+id/containerRight"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/toolbal_player"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home">
+    </item>
+
+    <item
+        android:id="@+id/temas_drawer"
+        android:title="Personalizacion"
+        android:icon="@drawable/menu_themes">
+    </item>
+
+    <item
+        android:id="@+id/recortar_drawer"
+        android:title="Recortar"
+        android:icon="@drawable/ic_cut">
+    </item>
+
+    <item
+        android:id="@+id/temporizador"
+        android:title="Temporizador"
+        android:icon="@drawable/menu_alarma">
+    </item>
+
+    <item
+        android:id="@+id/modeConductor"
+        android:title="Modo conductor"
+        android:icon="@drawable/ic_car">
+    </item>
+
+    <item
+        android:id="@+id/setting"
+        android:title="Configuracion"
+        android:icon="@drawable/ic_settings">
+    </item>
+
+    <item
+        android:id="@+id/ecualizador"
+        android:title="Ecualizador"
+        android:icon="@drawable/ic_ecualizer">
+    </item>
+
+    <item
+        android:id="@+id/about"
+        android:title="Acerca De"
+        android:icon="@drawable/ic_inf">
+    </item>
+
+    <item
+        android:id="@+id/exit"
+        android:title="Salir"
+        android:icon="@drawable/ic_exit">
+    </item>
+
+
+
+</menu>

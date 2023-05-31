@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:id="@+id/optionA"
+                android:background="@drawable/selector_item_background"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/img1"
+                    android:src="@drawable/ic_screem"
+                    app:tint="#673AB7"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img1"
+                    android:layout_toEndOf="@id/img1"
+                    android:textSize="23sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="Pantalla y personalización"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:id="@+id/optionB"
+                android:background="@drawable/selector_item_background"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imglock"
+                    android:src="@drawable/ic_lock"
+                    app:tint="#673AB7"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imglock"
+                    android:layout_toEndOf="@id/imglock"
+                    android:textSize="23sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="Bloqueo de pantalla"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:id="@+id/optionC"
+                android:background="@drawable/selector_item_background"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/img2"
+                    android:src="@drawable/ic_music"
+                    app:tint="#673AB7"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img2"
+                    android:layout_toEndOf="@id/img2"
+                    android:textSize="23sp"
+                    android:layout_marginStart="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="Audio"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="7dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:id="@+id/optionD"
+                android:background="@drawable/selector_item_background"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/img3"
+                    android:src="@drawable/ic_reproductor"
+                    app:tint="#673AB7"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img3"
+                    android:layout_toEndOf="@id/img3"
+                    android:textSize="23sp"
+                    android:layout_marginStart="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="Reproductor"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="7dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:id="@+id/optionE"
+                android:background="@drawable/selector_item_background"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/img4"
+                    android:src="@drawable/ic_languaje"
+                    app:tint="#673AB7"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img4"
+                    android:layout_toEndOf="@id/img4"
+                    android:textSize="23sp"
+                    android:layout_marginStart="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="Lenguaje"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="7dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/selector_item_background"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/img5"
+                    android:src="@drawable/ic_vibration_music"
+                    app:tint="#673AB7"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img5"
+                    android:layout_toEndOf="@id/img5"
+                    android:textSize="23sp"
+                    android:layout_marginStart="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="tono de llamada"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="7dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/selector_item_background"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/img6"
+                    android:src="@drawable/ic_headphones"
+                    app:tint="#673AB7"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img6"
+                    android:layout_toEndOf="@id/img6"
+                    android:textSize="23sp"
+                    android:layout_marginStart="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="Auriculares"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="7dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/selector_item_background"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/img7"
+                    android:src="@drawable/ic_settings"
+                    app:tint="#673AB7" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img7"
+                    android:layout_toEndOf="@id/img7"
+                    android:textSize="23sp"
+                    android:layout_marginStart="7dp"
+                    android:layout_centerVertical="true"
+                    android:text="Avanzado"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="7dp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

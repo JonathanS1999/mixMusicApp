@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:comtext=".MainActivity"
+    >
+
+    <item
+        android:id ="@+id/itemMS1"
+        android:title="Reproducir"
+        />
+
+    <item
+        android:id ="@+id/itemMS2"
+        android:title="Eliminar"
+        />
+
+    <item
+        android:id ="@+id/itemMS3"
+        android:title="Compartir"
+        />
+
+    <item
+        android:id ="@+id/itemMS4"
+        android:title="Añadir a lista de reproduccion "
+        />
+
+    <item
+        android:id ="@+id/itemMS5"
+        android:title="Agregar a cola"
+        />
+
+    <item
+        android:id ="@+id/itemMS6"
+        android:title="mover a"
+        />
+
+    <item
+        android:id="@+id/itemMS7"
+        android:title="añadir a favoritos"
+        />
+
+</menu>
